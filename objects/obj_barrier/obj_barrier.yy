@@ -1,11 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_box_placeable",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_barrier",
+  "eventList":[],
   "managed":true,
-  "name":"obj_box_placeable",
+  "name":"obj_barrier",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_barrier",
+    "path":"sprites/spr_barrier/spr_barrier.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
