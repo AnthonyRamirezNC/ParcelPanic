@@ -53,6 +53,7 @@
     {"id":{"name":"spr_box","path":"sprites/spr_box/spr_box.yy",},},
     {"id":{"name":"spr_collector","path":"sprites/spr_collector/spr_collector.yy",},},
     {"id":{"name":"spr_conveyorBelt","path":"sprites/spr_conveyorBelt/spr_conveyorBelt.yy",},},
+    {"id":{"name":"spr_menu_btn","path":"sprites/spr_menu_btn/spr_menu_btn.yy",},},
     {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_ticket","path":"sprites/spr_ticket/spr_ticket.yy",},},
