@@ -2,9 +2,7 @@
 event_inherited();
 
 if (state == State.Carrying and player != noone) {
-	x = player.x;
-	y = player.y - 50;
-	depth = player.depth - 1;
+	depth = player.depth - 20;
 	exit;
 }
 

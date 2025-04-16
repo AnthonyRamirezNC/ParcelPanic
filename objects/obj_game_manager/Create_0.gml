@@ -1,6 +1,9 @@
 
 
 room_level = 0;
+quota = 5;
+
+
 tickets = [
 	noone, noone,
 	noone, noone,
@@ -9,5 +12,5 @@ tickets = [
 
 // get starting tickets 6
 for (var i = 0; i < 6; i++) {
-	tickets[i] = get_ticket();
+	set_ticket(i);
 }

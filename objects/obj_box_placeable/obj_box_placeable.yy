@@ -8,8 +8,8 @@
   "name":"obj_box_placeable",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"PlaceableObjects",
+    "path":"folders/Objects/PlaceableObjects.yy",
   },
   "parentObjectId":{
     "name":"obj_drawn_objects",
