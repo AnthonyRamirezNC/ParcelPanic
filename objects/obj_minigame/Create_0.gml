@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-mini_game_width = round(camera[0]);
+
 
 open = false;
 
