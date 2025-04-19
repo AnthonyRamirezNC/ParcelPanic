@@ -2,8 +2,28 @@ if (state == State.Carrying and player != noone) {
 	x = player.x;
 	y = player.y - 50;
 }
-draw_self();
 
+
+draw_self();
+// Shipping Label Drawing code
+#region
+if (attributes[0] == Shipping.Airplane) {
+	draw_sprite_ext(
+		spr_airplane_label, 
+		0, 
+		x - sprite_xoffset, 
+		y - sprite_yoffset,
+		.5,
+		.5,
+		0,
+		c_white,
+		1
+	);
+}
+#endregion
+
+// Focus Draw code
+#region
 if (obj_player.box_focus == id) {
 	// Get the top left px origin
 	var off_x = sprite_get_xoffset(sprite_index) * image_xscale;
@@ -38,3 +58,4 @@ if (obj_player.box_focus == id) {
 	draw_line_width_color(x2, y1, x2, y2, lin_width, rec_color, rec_color);
 
 }
+#endregion

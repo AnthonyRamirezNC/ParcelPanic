@@ -101,11 +101,20 @@ if (keyboard_check_pressed(vk_space) and !carrying) // or whatever your pickup k
 } else if (keyboard_check_pressed(vk_space) and carrying and box != noone) {
 	if (focus != noone) {
 		// if the players focus is near something like a converor belt or mini game
-		// assume conveyor belt, as minigames have yet to be added
-		box.state = State.OnConveyer;
-		box.x = focus.x;
-		box.y = focus.y - 12;
-		box.on_what = focus;
+		// Wow, a super hot switch statement
+		switch (focus.object_index) {
+			case obj_shipping:
+				show_debug_message("On obj shipping")
+			break;
+			
+			case obj_conveyorBeltEnter:
+				box.state = State.OnConveyer;
+				box.x = focus.x;
+				box.y = focus.y - 12;
+				box.on_what = focus;
+				box.movement_direction = sign(focus.image_xscale);
+			break;
+		}
 		
 	} else {
 		// Box is now on the ground

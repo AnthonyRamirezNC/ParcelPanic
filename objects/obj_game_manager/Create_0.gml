@@ -1,7 +1,14 @@
+randomize();
 
+enum Shipping {
+	Truck,
+	Airplane,
+	Ship
+}
 
 room_level = 0;
-quota = 5;
+quota = 7;
+taken_quota = quota;
 
 
 tickets = [

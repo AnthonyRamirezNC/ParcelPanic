@@ -41,10 +41,10 @@ var t_y3 = t_y2 + ticket_height + vertical_space;
 
 // Draw All 6 Tickets
 draw_ticket(t_x1, t_y1, ticket_scale, 0);
-draw_ticket(t_x1, t_y2, ticket_scale, 1);
-draw_ticket(t_x1, t_y3, ticket_scale, 2);
-draw_ticket(t_x2, t_y1, ticket_scale, 3);
-draw_ticket(t_x2, t_y2, ticket_scale, 4);
+draw_ticket(t_x2, t_y1, ticket_scale, 1);
+draw_ticket(t_x1, t_y2, ticket_scale, 2);
+draw_ticket(t_x2, t_y2, ticket_scale, 3);
+draw_ticket(t_x1, t_y3, ticket_scale, 4);
 draw_ticket(t_x2, t_y3, ticket_scale, 5);
 
 

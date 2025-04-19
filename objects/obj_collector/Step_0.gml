@@ -13,7 +13,7 @@ if (box.state != State.OnConveyer) {
 
 // We can assume box equals something and is on the conveyor, do color check
 // remember, attributes[0] is color
-if (collection_color != "reset" and box.attributes[0] == collection_color) {
+if (collection_type != noone and box.attributes[0] == collection_type) {
 	// It is on the correct conveyor, so call collect_box
 	// pass in box attributes as needed
 	collect_box(box.attributes);

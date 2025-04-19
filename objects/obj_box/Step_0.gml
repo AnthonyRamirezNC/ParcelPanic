@@ -8,7 +8,7 @@ if (state == State.Carrying and player != noone) {
 
 
 if (state == State.OnConveyer) {
-	x = x - 1;
+	x = x + (conveyor_speed * movement_direction);
 	if (on_what != noone) {
 		depth = on_what.depth - 1;
 	}

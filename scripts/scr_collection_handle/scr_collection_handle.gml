@@ -4,19 +4,17 @@ function collect_box(box_attributes){
 		of the box that was just validly collected
 	*/
 	// both attributes and ticket_info[i] should have the same structure and order
-	
-	var ticket_info = obj_game_manager.tickets;
-	var number_of_tickets = array_length(ticket_info)
+	var number_of_tickets = array_length(obj_game_manager.tickets)
 	
 	// Loop through every ticket in
 	for (var i = 0; i < number_of_tickets; i++) {
 		// If there isn't a ticket at the index, don't check it
-		if (ticket_info[i] == noone) {
+		if (obj_game_manager.tickets[i] == noone) {
 			continue;
 		}
 		
 		// If there is a ticket, test if it is equal to the boxes attributes
-		if (box_ticket_equal(ticket_info[i], box_attributes)) {
+		if (box_ticket_equal(obj_game_manager.tickets[i], box_attributes)) {
 			// Good job, you shipped at box, quota goes down by 1
 			if (obj_game_manager.quota > 0) {
 				obj_game_manager.quota -= 1;

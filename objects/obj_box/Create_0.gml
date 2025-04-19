@@ -8,11 +8,13 @@ enum State {
 	OnMiniGame,
 }
 
+
 state = noone;
 player = noone;
 on_what = noone;
+movement_direction = 0;
 
 
 // Attributes of the box
-// 0 - color
-attributes = ["none"];
+// 0 - Shipping Method
+attributes = [Shipping.Airplane];

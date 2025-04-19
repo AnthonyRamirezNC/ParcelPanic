@@ -2,14 +2,15 @@ draw_self();
 
 if (obj_player.focus == id) {
 	// Get the top left px origin
-	var off_x = sprite_get_xoffset(sprite_index) * image_xscale;
+	var off_x = sprite_get_xoffset(sprite_index) * abs(image_xscale);
     var off_y = sprite_get_yoffset(sprite_index) * image_yscale;
 	
 	var base_x = round(x - off_x);
 	var base_y = round(y - off_y);
 	
-	var spr_w = sprite_get_width(sprite_index) * image_xscale;
+	var spr_w = sprite_get_width(sprite_index) * abs(image_xscale);
     var spr_h = sprite_get_height(sprite_index) * image_yscale;
+	
 	
 	var x1 = base_x;
     var x2 = base_x + spr_w - 1;
