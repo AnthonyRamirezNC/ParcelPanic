@@ -1,0 +1,1 @@
+draw_text(room_width / 2, room_height / 2, "You have not proven your worth and have been replaced by AI. Better luck in your next job")
