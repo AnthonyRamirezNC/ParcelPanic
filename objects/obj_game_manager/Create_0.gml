@@ -10,6 +10,8 @@ room_level = 0;
 quota = 7;
 taken_quota = quota;
 
+quota_timer = 180.0;
+timer_active = true
 
 tickets = [
 	noone, noone,
