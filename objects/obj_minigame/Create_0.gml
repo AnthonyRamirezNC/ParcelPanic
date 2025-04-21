@@ -3,6 +3,12 @@ event_inherited();
 
 
 
-open = false;
+// these variables only matter when he box is waiting
+attribute = noone;
+time_left = 0;
+box = noone;
 
-countdown_timer = base_countdown_timer * game_get_speed(gamespeed_fps)
+
+current_manager = noone;
+
+

@@ -1,13 +1,17 @@
 {
   "$GMObject":"",
   "%Name":"obj_shipping_complete_area",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_shipping_complete_area",
   "overriddenProperties":[],
   "parent":{
-    "name":"Shipping",
-    "path":"folders/Objects/PlaceableObjects/MiniGames/Shipping.yy",
+    "name":"minigame_objects",
+    "path":"folders/Objects/PlaceableObjects/MiniGames/Shipping/minigame_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -23,11 +27,16 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"status_variable","filters":[],"listItems":[],"multiselect":false,"name":"status_variable","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"noone","varType":4,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_shipping_complete_area",
+    "path":"sprites/spr_shipping_complete_area/spr_shipping_complete_area.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -7,18 +7,33 @@ if (state == State.Carrying and player != noone) {
 draw_self();
 // Shipping Label Drawing code
 #region
-if (attributes[0] == Shipping.Airplane) {
-	draw_sprite_ext(
-		spr_airplane_label, 
-		0, 
-		x - sprite_xoffset, 
-		y - sprite_yoffset,
-		.5,
-		.5,
-		0,
-		c_white,
-		1
-	);
+if (attributes[0] != noone) {
+	var label = noone;
+	switch (attributes[0]) {
+		case Shipping.Airplane:
+			label = spr_airplane_label;
+		break;
+		case Shipping.Truck:
+			label = spr_truck_label;
+		break;
+		case Shipping.Ship:
+			label = spr_ship_label;
+		break;
+	}
+	
+	if (label != noone) {
+		draw_sprite_ext(
+			label, 
+			0, 
+			x - sprite_xoffset, 
+			y - sprite_yoffset,
+			.5,
+			.5,
+			0,
+			c_white,
+			1
+		);
+	}
 }
 #endregion
 

@@ -1,10 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_shipping",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_shipping",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_minigame","path":"objects/obj_minigame/obj_minigame.yy",},"propertyId":{"name":"manager","path":"objects/obj_minigame/obj_minigame.yy",},"resource":{"name":"obj_shipping_manager","path":"objects/obj_shipping_manager/obj_shipping_manager.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_shipping_manager",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_minigame","path":"objects/obj_minigame/obj_minigame.yy",},"propertyId":{"name":"index","path":"objects/obj_minigame/obj_minigame.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
+  ],
   "parent":{
     "name":"Shipping",
     "path":"folders/Objects/PlaceableObjects/MiniGames/Shipping.yy",
