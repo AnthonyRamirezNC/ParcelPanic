@@ -9,8 +9,8 @@
   "name":"obj_drawn_objects",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"DrawnObjects",
+    "path":"folders/Objects/DrawnObjects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

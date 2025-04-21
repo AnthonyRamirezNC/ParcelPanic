@@ -8,5 +8,14 @@ enum State {
 	OnMiniGame,
 }
 
+
 state = noone;
 player = noone;
+on_what = noone;
+movement_direction = 0;
+
+
+// Attributes of the box
+// 0 - Shipping Method
+// then 4 more minigame attributes
+attributes = [noone, noone, noone, noone, noone];

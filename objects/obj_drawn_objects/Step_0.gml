@@ -1,2 +1,2 @@
-depth = original_depth - .1 * (y + (sprite_height / 2))
+depth = original_depth - 1 * (y - sprite_yoffset + sprite_height);
 
