@@ -1,10 +1,5 @@
 randomize();
 
-enum Shipping {
-	Truck,
-	Airplane,
-	Ship
-}
 
 room_level = 0;
 quota = 7;

@@ -3,6 +3,18 @@ event_inherited();
 
 
 
-open = false;
+// must set these two variables in the child object
+#region
+manager = noone;
+index = noone;
+#endregion
 
-countdown_timer = base_countdown_timer * game_get_speed(gamespeed_fps)
+// these variables only matter when he box is waiting
+attribute = noone;
+time_left = 0;
+box = noone;
+
+
+current_manager = noone;
+
+

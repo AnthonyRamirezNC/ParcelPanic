@@ -6,8 +6,8 @@
   "name":"obj_shipping_complete_area",
   "overriddenProperties":[],
   "parent":{
-    "name":"Shipping",
-    "path":"folders/Objects/PlaceableObjects/MiniGames/Shipping.yy",
+    "name":"minigame_objects",
+    "path":"folders/Objects/PlaceableObjects/MiniGames/Shipping/minigame_objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_shipping_complete_area",
+    "path":"sprites/spr_shipping_complete_area/spr_shipping_complete_area.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

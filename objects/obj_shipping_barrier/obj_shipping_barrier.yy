@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_shipping",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_shipping_barrier",
+  "eventList":[],
   "managed":true,
-  "name":"obj_shipping",
+  "name":"obj_shipping_barrier",
   "overriddenProperties":[],
   "parent":{
-    "name":"Shipping",
-    "path":"folders/Objects/PlaceableObjects/MiniGames/Shipping.yy",
+    "name":"minigame_objects",
+    "path":"folders/Objects/PlaceableObjects/MiniGames/Shipping/minigame_objects.yy",
   },
-  "parentObjectId":{
-    "name":"obj_minigame",
-    "path":"objects/obj_minigame/obj_minigame.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -33,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_shipping",
-    "path":"sprites/spr_shipping/spr_shipping.yy",
+    "name":"spr_shipping_barrier",
+    "path":"sprites/spr_shipping_barrier/spr_shipping_barrier.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -5,5 +5,3 @@ with (box) {
 	movement_direction = sign(on_what.image_xscale);
 }
 alarm[0] = game_get_speed(gamespeed_fps) * box_spawn_speed;
-
-show_debug_message(string(display_get_gui_height()));

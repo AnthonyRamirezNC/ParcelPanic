@@ -57,6 +57,14 @@ if (carrying) {
 	var nearest_focus = noone;
     var nearest_dist = drop_range;
 	with (obj_box_placeable) {
+		// If it is a minigame, make sure there isn't already a box on it
+		if (object_is_ancestor(object_index, obj_minigame)) {
+			if (box != noone) {
+				continue;
+			}
+		}
+		
+		// Now run code
 		var dist = point_distance(other.x, other.y + 21, x, y);
         if (dist < other.drop_range && dist < nearest_dist)
         {
@@ -93,6 +101,9 @@ if (keyboard_check_pressed(vk_space) and !carrying) // or whatever your pickup k
 		carrying = true;
         with (box)
         {
+			if (state == State.OnMiniGame) {
+				pickup_box_off_minigame(on_what);
+			}
             state = State.Carrying;
 			player = other.id;
 			on_what = noone;
@@ -102,48 +113,24 @@ if (keyboard_check_pressed(vk_space) and !carrying) // or whatever your pickup k
 	if (focus != noone) {
 		// if the players focus is near something like a converor belt or mini game
 		// Wow, a super hot switch statement
-		switch (focus.object_index) {
-			case obj_shipping:
-				show_debug_message("On obj shipping")
-			break;
+		// nevermind, there is no longer a switch statement
+		if (focus.object_index == obj_conveyorBeltEnter) {
+			box.state = State.OnConveyer;
+			box.x = focus.x;
+			box.y = focus.y - 12;
+			box.on_what = focus;
+			box.movement_direction = sign(focus.image_xscale);
+		} else {
+			var status = place_box_on_minigame(focus, box);
 			
-			case obj_conveyorBeltEnter:
-				box.state = State.OnConveyer;
-				box.x = focus.x;
-				box.y = focus.y - 12;
-				box.on_what = focus;
-				box.movement_direction = sign(focus.image_xscale);
-			break;
-		}
-		
-	} else {
-		// Box is now on the ground
-	
-		// Set position on the ground
-		with (box) {
-			// Box is now on ground
-			state = State.OnGround;
-			
-			// get y ground pos
-			var l_r_ground = other.y + other.sprite_height/2 - obj_box.sprite_height/2;
-			if (other.facing == 0 and !place_meeting(other.x + 64, l_r_ground, obj_drawn_objects)) {
-				x = other.x + 64
-				y = l_r_ground;
-			} else if (other.facing == 1 and !place_meeting(other.x, other.y - 40, obj_drawn_objects)) {
-				x = other.x;
-				y = other.y - 40;
-			} else if (other.facing == 2 and !place_meeting(other.x - 64, l_r_ground, obj_drawn_objects)) {
-				x = other.x - 64
-				y = l_r_ground;
-			} else if (other.facing == 3 and !place_meeting(other.x, other.y + 64, obj_drawn_objects)) {
-				x = other.x;
-				y = other.y + 64;
-			} else {
-				x = other.x;
-				y = l_r_ground - (other.bbox_bottom - other.bbox_top);
+			if (!status) {
+				// Else, place on ground
+				set_box_on_ground(box);
 			}
-			
 		}
+	} else {
+		// Function call to set box on the ground
+		set_box_on_ground(box);
 	}
 	// Box no longer attached to player
 	box.player = noone;

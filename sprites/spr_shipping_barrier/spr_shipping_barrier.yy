@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_shipping",
+  "%Name":"spr_shipping_barrier",
   "bboxMode":0,
   "bbox_bottom":63,
   "bbox_left":0,
@@ -12,18 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"80d59370-7c36-4cab-8c6a-fb1e99732db2","name":"80d59370-7c36-4cab-8c6a-fb1e99732db2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"71eaed20-5468-40e1-afe5-a65f5173ef0d","name":"71eaed20-5468-40e1-afe5-a65f5173ef0d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"4eedff6e-e7b0-4067-ac26-95ce33e7b33b","blendMode":0,"displayName":"default","isLocked":false,"name":"4eedff6e-e7b0-4067-ac26-95ce33e7b33b","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"9ac48f60-80f5-4d9a-b281-c5b403e1e031","blendMode":0,"displayName":"default","isLocked":false,"name":"9ac48f60-80f5-4d9a-b281-c5b403e1e031","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_shipping",
+  "name":"spr_shipping_barrier",
   "nineSlice":null,
-  "origin":4,
+  "origin":0,
   "parent":{
     "name":"Shipping",
     "path":"folders/Sprites/Minigames/Shipping.yy",
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_shipping",
+    "%Name":"spr_shipping_barrier",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_shipping",
+    "name":"spr_shipping_barrier",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,14 +69,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"80d59370-7c36-4cab-8c6a-fb1e99732db2","path":"sprites/spr_shipping/spr_shipping.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"5c0fbd17-37a3-44e2-bc64-0dad2efe1725","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"71eaed20-5468-40e1-afe5-a65f5173ef0d","path":"sprites/spr_shipping_barrier/spr_shipping_barrier.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"d283d49e-773b-479b-8030-23b666a40298","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":32,
-    "yorigin":32,
+    "xorigin":0,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

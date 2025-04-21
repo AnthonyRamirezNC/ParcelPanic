@@ -17,4 +17,5 @@ movement_direction = 0;
 
 // Attributes of the box
 // 0 - Shipping Method
-attributes = [Shipping.Airplane];
+// then 4 more minigame attributes
+attributes = [Shipping.Airplane, noone, noone, noone, noone];
