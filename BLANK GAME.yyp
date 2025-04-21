@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"BLANK GAME",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -36,11 +36,12 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"BLANK GAME",
   "resources":[
@@ -52,6 +53,7 @@
     {"id":{"name":"obj_conveyorBelt","path":"objects/obj_conveyorBelt/obj_conveyorBelt.yy",},},
     {"id":{"name":"obj_conveyorBeltEnter","path":"objects/obj_conveyorBeltEnter/obj_conveyorBeltEnter.yy",},},
     {"id":{"name":"obj_drawn_objects","path":"objects/obj_drawn_objects/obj_drawn_objects.yy",},},
+    {"id":{"name":"obj_fail_text","path":"objects/obj_fail_text/obj_fail_text.yy",},},
     {"id":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},},
     {"id":{"name":"obj_menu_display","path":"objects/obj_menu_display/obj_menu_display.yy",},},
     {"id":{"name":"obj_minigame_exit_btn","path":"objects/obj_minigame_exit_btn/obj_minigame_exit_btn.yy",},},
@@ -68,6 +70,7 @@
     {"id":{"name":"obj_shipping_moveable_objects","path":"objects/obj_shipping_moveable_objects/obj_shipping_moveable_objects.yy",},},
     {"id":{"name":"obj_shipping","path":"objects/obj_shipping/obj_shipping.yy",},},
     {"id":{"name":"Main_Room","path":"rooms/Main_Room/Main_Room.yy",},},
+    {"id":{"name":"rm_fail","path":"rooms/rm_fail/rm_fail.yy",},},
     {"id":{"name":"scr_collection_handle","path":"scripts/scr_collection_handle/scr_collection_handle.yy",},},
     {"id":{"name":"scr_minigame_manager","path":"scripts/scr_minigame_manager/scr_minigame_manager.yy",},},
     {"id":{"name":"scr_player_movement_placement","path":"scripts/scr_player_movement_placement/scr_player_movement_placement.yy",},},
@@ -97,6 +100,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Main_Room","path":"rooms/Main_Room/Main_Room.yy",},},
+    {"roomId":{"name":"rm_fail","path":"rooms/rm_fail/rm_fail.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
