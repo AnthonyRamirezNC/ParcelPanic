@@ -14,7 +14,11 @@ function get_ticket() {
 	obj_game_manager.taken_quota -= 1;
 	
 	return [
-		get_random_shipping()
+		get_random_shipping(),
+		noone,
+		noone,
+		noone,
+		noone
 	];
 }
 
@@ -59,6 +63,7 @@ function draw_ticket(ticket_x, ticket_y, ticket_scale, index) {
 	var text_x = ticket_x;
 	var text_y = ticket_y;
 	for (var i = 0; i < array_length(ticket_info); i++) {
+		
 		draw_text_color(
 			text_x, 
 			text_y, 
@@ -69,6 +74,7 @@ function draw_ticket(ticket_x, ticket_y, ticket_scale, index) {
 			c_black,
 			1
 		);
+		text_y += 15;
 	}
 }
 

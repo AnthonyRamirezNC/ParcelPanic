@@ -1,1 +1,1 @@
-exit_minigame(minigame, noone, noone, noone);
+exit_minigame(minigame);

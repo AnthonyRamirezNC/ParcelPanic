@@ -6,6 +6,3 @@ enum Shipping {
 	Airplane,
 	Ship
 }
-
-manager = obj_shipping_manager;
-index = 0;

@@ -1,14 +1,58 @@
 
 
+
+
+if (!instance_exists(manager)) {
+	exit;
+}
+
+var new_status = instance_place(x, y, obj_shipping_complete_area);
+if (new_status != noone) {
+	manager.status = new_status.status_variable;
+} else {
+	manager.status = noone;
+}
+
+if (!mouse_check_button(mb_left)) {
+	clicked = false;
+}
+
+if (!manager.mouse_active) {
+	clicked = false;
+}
+
 if (clicked) {
 	var dx = (mouse_x - mouse_xprev);
 	var dy = (mouse_y - mouse_yprev);
-
-	x += dx;
-	y += dy;
-
+	
+	// check overlap with barriers to make sure player cant
+	// drag over them
+	if (place_meeting(x + dx, y + dy, obj_shipping_barrier)) {	
+		// code for x
+		var new_dx = dx;
+		var magnitude = sign(new_dx);
+		new_dx = abs(new_dx);
+		while (place_meeting(x + (new_dx * magnitude), y, obj_shipping_barrier) and new_dx > 0) {
+			new_dx -= 1;
+		}
+		new_dx = new_dx * magnitude;
+		x += new_dx;
+		
+		var new_dy = dy;
+		magnitude = sign(new_dy);
+		new_dy = abs(new_dy);
+		while (place_meeting(x, y + (new_dy * magnitude), obj_shipping_barrier) and new_dy > 0) {
+			new_dy -= 1;
+		}
+		new_dy = new_dy * magnitude;
+		y += new_dy;
+	} else {
+		x += dx;
+		y += dy;
+	}
 	mouse_xprev = mouse_x;
 	mouse_yprev = mouse_y;
+	
 	exit;
 }
 

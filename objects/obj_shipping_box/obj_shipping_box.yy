@@ -14,7 +14,10 @@
     "name":"minigame_objects",
     "path":"folders/Objects/PlaceableObjects/MiniGames/Shipping/minigame_objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_shipping_moveable_objects",
+    "path":"objects/obj_shipping_moveable_objects/obj_shipping_moveable_objects.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

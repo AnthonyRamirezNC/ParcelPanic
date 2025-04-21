@@ -14,37 +14,22 @@ function open_minigame(minigame, player) {
 		"Instances", 
 		minigame.manager
 	);
+	
+
 }
 
 
-function exit_minigame(minigame, complete_status) {
-	
-
-	
+function exit_minigame(minigame) {
 	// Early Exits if issues;
+	
 	if (minigame.current_manager == noone) {
 		show_debug_message("No manager, how?");
 		return;
 	}
-	if (minigame.box == noone) {
-		show_debug_message("No box on minigame");
-		return;
-	}
-	if (minigame.index == noone) {
-		show_debug_message("Minigame missing index");
-		return;
-	}
 	
-	// none is instant
-	if (complete_status == noone) {
-		minigame.box.attributes[minigame.index] = noone;
-		minigame.attribute = noone;
-		minigame.time_left = 0;
-	} else { // if there is a completion status other than none, start timer to place attribute
-		start_attribute_placement(minigame, complete_status);
-	}
-
+	show_debug_message("trying to exit minigame");
 	instance_destroy(minigame.current_manager);
+	minigame.current_manager = noone;
 }
 
 function start_attribute_placement(minigame, new_attribute) {
@@ -62,6 +47,9 @@ function get_minigame_timer_interval() {
 function place_box_on_minigame(minigame, box) {
 	show_debug_message("placing box on minigame");
 	if (minigame.box != noone or minigame.current_manager != noone) {
+		show_debug_message("Couldn't place box on minigame")
+		show_debug_message(string(minigame.box));
+		show_debug_message(string(minigame.current_manager));
 		return false;
 	}
 	box.state = State.OnMiniGame;
@@ -70,6 +58,7 @@ function place_box_on_minigame(minigame, box) {
 	box.depth = minigame.depth - 1;
 	box.on_what = minigame;
 	minigame.box = box;
+	minigame.attribute = box.attributes[minigame.index];
 	open_minigame(minigame, obj_player);
 	return true;
 }
@@ -78,8 +67,8 @@ function pickup_box_off_minigame(minigame) {
 	show_debug_message("Taking box off minigame")
 	if (minigame.current_manager != noone) {
 		// umm just destroy?
-		show_debug_message("took box off minigame while playing minigame")
-		instance_destroy(minigame.current_manager);
+		show_debug_message("took box off minigame while playing minigame");
+		exit_minigame(minigame);
 	}
 	if (minigame.time_left != 0) {
 		show_debug_message("took box off while waiting");

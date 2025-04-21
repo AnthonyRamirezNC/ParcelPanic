@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
   "%Name":"obj_shipping_manager",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_shipping_manager",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_minigame_manager","path":"objects/obj_minigame_manager/obj_minigame_manager.yy",},"propertyId":{"name":"background_focus","path":"objects/obj_minigame_manager/obj_minigame_manager.yy",},"resource":{"name":"obj_shipping_background","path":"objects/obj_shipping_background/obj_shipping_background.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_shipping_background",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_minigame_manager","path":"objects/obj_minigame_manager/obj_minigame_manager.yy",},"propertyId":{"name":"minigame","path":"objects/obj_minigame_manager/obj_minigame_manager.yy",},"resource":{"name":"obj_shipping","path":"objects/obj_shipping/obj_shipping.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_shipping",},
+  ],
   "parent":{
     "name":"Shipping",
     "path":"folders/Objects/PlaceableObjects/MiniGames/Shipping.yy",

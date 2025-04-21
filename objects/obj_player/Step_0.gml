@@ -1,6 +1,11 @@
 // Inherit the parent event
 event_inherited();
 
+// I wonder if this'll just work??
+if (p_on_minigame) {
+	exit;
+}
+
 // Movement
 #region
 var up = keyboard_check(vk_up) or keyboard_check(ord("W"));
