@@ -6,6 +6,7 @@ box = noone;
 facing = 0; // 0-right, 1-up, 2-left, 3-down
 focus = noone;
 box_focus = noone;
+moving = noone;
 
 p_on_minigame = false;
 

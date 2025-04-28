@@ -12,7 +12,11 @@ var up = keyboard_check(vk_up) or keyboard_check(ord("W"));
 var down = keyboard_check(vk_down) or keyboard_check(ord("S"));
 var left = keyboard_check(vk_left) or keyboard_check(ord("A"));
 var right = keyboard_check(vk_right) or keyboard_check(ord("D"));
-
+if (up or down or left or right) {
+	moving = true;
+} else {
+	moving = false;
+}
 var newx = 0;
 var newy = 0;
 if (up) {

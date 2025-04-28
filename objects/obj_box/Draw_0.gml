@@ -1,3 +1,6 @@
+
+
+
 if (state == State.Carrying and player != noone) {
 	x = player.x;
 	y = player.y - 50;
