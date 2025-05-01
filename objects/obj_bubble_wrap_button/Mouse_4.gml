@@ -1,0 +1,1 @@
+obj_dispenser.bubble_pressed = true

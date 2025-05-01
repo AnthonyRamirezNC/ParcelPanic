@@ -1,0 +1,1 @@
+obj_dispenser.foam_pressed = true
