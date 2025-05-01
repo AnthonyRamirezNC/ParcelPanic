@@ -1,3 +1,6 @@
+
+
+
 if (state == State.Carrying and player != noone) {
 	x = player.x;
 	y = player.y - 50;
@@ -11,13 +14,13 @@ if (attributes[0] != noone) {
 	var label = noone;
 	switch (attributes[0]) {
 		case Shipping.Airplane:
-			label = spr_airplane_label;
+			label = spr_a_label;
 		break;
 		case Shipping.Truck:
-			label = spr_truck_label;
+			label = spr_t_label;
 		break;
 		case Shipping.Ship:
-			label = spr_ship_label;
+			label = spr_b_label;
 		break;
 	}
 	
@@ -36,6 +39,74 @@ if (attributes[0] != noone) {
 	}
 }
 #endregion
+
+
+// Packaging Label Drawing code
+#region
+if (attributes[1] != noone) {
+	draw_sprite_ext(
+		packaged_label_spr, 
+		0, 
+		x , 
+		y - 5,
+		.5,
+		.5,
+		0,
+		c_white,
+		1
+	);
+}
+#endregion
+
+
+// Packaging Label Drawing code
+#region
+if (attributes[1] != noone) {
+	draw_sprite_ext(
+		packaged_label_spr, 
+		0, 
+		x , 
+		y - 5,
+		.5,
+		.5,
+		0,
+		c_white,
+		1
+	);
+}
+#endregion
+
+#region
+if (attributes[2] != noone) {
+	var stamp = noone;
+	switch (attributes[2]) {
+		case Stamp.Blue:
+			stamp = spr_stamp_blue;
+		break;
+		case Stamp.Green:
+			stamp = spr_stamp_green;
+		break;
+		case Stamp.Yellow:
+			stamp = spr_stamp_yellow;
+		break;
+	}
+	
+	if (stamp != noone) {
+	draw_sprite_ext(
+		stamp, 
+		0, 
+		x - sprite_xoffset + sprite_width/2, // shift to the right
+		y - sprite_yoffset  + sprite_width/8,
+		0.25,
+		0.25,
+		0,
+		c_white,
+		1
+	);
+	}
+}
+#endregion
+
 
 // Focus Draw code
 #region
