@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_dispenser",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_foam_button",
+  "eventList":[],
   "managed":true,
-  "name":"obj_dispenser",
+  "name":"obj_foam_button",
   "overriddenProperties":[],
   "parent":{
     "name":"minigame_objects",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_dispenser",
-    "path":"sprites/spr_dispenser/spr_dispenser.yy",
+    "name":"spr_foam_button",
+    "path":"sprites/spr_foam_button/spr_foam_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

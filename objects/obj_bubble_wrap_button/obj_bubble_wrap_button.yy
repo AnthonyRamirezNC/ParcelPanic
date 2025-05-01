@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"Object34",
+  "%Name":"obj_bubble_wrap_button",
   "eventList":[],
   "managed":true,
-  "name":"Object34",
+  "name":"obj_bubble_wrap_button",
   "overriddenProperties":[],
   "parent":{
     "name":"minigame_objects",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_bubble_wrap_button",
+    "path":"sprites/spr_bubble_wrap_button/spr_bubble_wrap_button.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

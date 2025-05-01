@@ -23,7 +23,7 @@
   ],
   "name":"spr_packaging_box",
   "nineSlice":null,
-  "origin":0,
+  "origin":4,
   "parent":{
     "name":"Packaging",
     "path":"folders/Sprites/Minigames/Packaging.yy",
@@ -49,7 +49,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":0.0,
+    "length":1.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -77,8 +77,8 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":32,
+    "yorigin":22,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
