@@ -1,0 +1,1 @@
+obj_dispenser.peanut_pressed = true

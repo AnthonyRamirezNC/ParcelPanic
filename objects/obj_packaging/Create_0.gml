@@ -4,5 +4,6 @@ event_inherited();
 enum Packaging {
 	Foam,
 	BubbleWrap,
-	Peanuts
+	Peanuts,
+	None
 }

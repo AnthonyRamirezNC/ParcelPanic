@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_peanut_button",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_foam",
+  "eventList":[],
   "managed":true,
-  "name":"obj_peanut_button",
+  "name":"obj_foam",
   "overriddenProperties":[],
   "parent":{
     "name":"minigame_objects",
     "path":"folders/Objects/PlaceableObjects/MiniGames/Packing/minigame_objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_bubble",
+    "path":"objects/obj_bubble/obj_bubble.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_peanut_button",
-    "path":"sprites/spr_peanut_button/spr_peanut_button.yy",
+    "name":"spr_foam",
+    "path":"sprites/spr_foam/spr_foam.yy",
   },
   "spriteMaskId":null,
   "visible":true,
