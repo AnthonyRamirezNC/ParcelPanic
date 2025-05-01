@@ -58,6 +58,56 @@ if (attributes[1] != noone) {
 }
 #endregion
 
+
+// Packaging Label Drawing code
+#region
+if (attributes[1] != noone) {
+	draw_sprite_ext(
+		packaged_label_spr, 
+		0, 
+		x , 
+		y - 5,
+		.5,
+		.5,
+		0,
+		c_white,
+		1
+	);
+}
+#endregion
+
+#region
+if (attributes[2] != noone) {
+	var stamp = noone;
+	switch (attributes[2]) {
+		case Stamp.Blue:
+			stamp = spr_stamp_blue;
+		break;
+		case Stamp.Green:
+			stamp = spr_stamp_green;
+		break;
+		case Stamp.Yellow:
+			stamp = spr_stamp_yellow;
+		break;
+	}
+	
+	if (stamp != noone) {
+	draw_sprite_ext(
+		stamp, 
+		0, 
+		x - sprite_xoffset + sprite_width/2, // shift to the right
+		y - sprite_yoffset  + sprite_width/8,
+		0.25,
+		0.25,
+		0,
+		c_white,
+		1
+	);
+	}
+}
+#endregion
+
+
 // Focus Draw code
 #region
 if (obj_player.box_focus == id) {
