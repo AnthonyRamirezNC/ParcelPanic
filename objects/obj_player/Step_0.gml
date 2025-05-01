@@ -13,6 +13,12 @@ var down = keyboard_check(vk_down) or keyboard_check(ord("S"));
 var left = keyboard_check(vk_left) or keyboard_check(ord("A"));
 var right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 
+if (up or down or left or right) {
+	moving = true;
+} else {
+	moving = false;
+}
+
 var newx = 0;
 var newy = 0;
 if (up) {
@@ -48,6 +54,16 @@ if (up) {
 		facing = 2;
 	}
 }
+
+if (facing = 0) {
+	if (image_xscale > 0){
+		image_xscale *= -1	
+	}
+} else if (facing = 2){
+	if (image_xscale < 0){
+		image_xscale *= -1	
+	}
+}
 // Prevent collisions
 newx = scr_player_check_x(newx, obj_drawn_objects);
 newy = scr_player_check_y(newy, obj_drawn_objects);
@@ -58,6 +74,11 @@ y += round(newy);
 // Focus and box focus
 #region
 if (carrying) {
+	if(!moving) {
+		sprite_index = spr_playerBoxIdle
+	} else {
+		sprite_index = spr_playerBoxMove	
+	}
 	box_focus = noone;
 	var nearest_focus = noone;
     var nearest_dist = drop_range;
@@ -80,6 +101,11 @@ if (carrying) {
 	focus = nearest_focus;
 	
 } else {
+	if (!moving) {
+		sprite_index = spr_playerIdle
+	} else {
+		sprite_index = spr_playerMove
+	}
 	focus = noone;
 	var nearest_focus = noone;
     var nearest_dist = pickup_range;

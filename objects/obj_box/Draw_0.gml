@@ -1,3 +1,6 @@
+
+
+
 if (state == State.Carrying and player != noone) {
 	x = player.x;
 	y = player.y - 50;
@@ -11,13 +14,13 @@ if (attributes[0] != noone) {
 	var label = noone;
 	switch (attributes[0]) {
 		case Shipping.Airplane:
-			label = spr_airplane_label;
+			label = spr_a_label;
 		break;
 		case Shipping.Truck:
-			label = spr_truck_label;
+			label = spr_t_label;
 		break;
 		case Shipping.Ship:
-			label = spr_ship_label;
+			label = spr_b_label;
 		break;
 	}
 	
