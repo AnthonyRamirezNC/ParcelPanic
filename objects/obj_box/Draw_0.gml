@@ -37,6 +37,24 @@ if (attributes[0] != noone) {
 }
 #endregion
 
+
+// Packaging Label Drawing code
+#region
+if (attributes[1] != noone) {
+	draw_sprite_ext(
+		packaged_label_spr, 
+		0, 
+		x , 
+		y - 5,
+		.5,
+		.5,
+		0,
+		c_white,
+		1
+	);
+}
+#endregion
+
 // Focus Draw code
 #region
 if (obj_player.box_focus == id) {
