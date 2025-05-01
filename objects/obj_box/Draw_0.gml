@@ -37,6 +37,38 @@ if (attributes[0] != noone) {
 }
 #endregion
 
+#region
+if (attributes[2] != noone) {
+	var stamp = noone;
+	switch (attributes[2]) {
+		case Stamp.Blue:
+			stamp = spr_stamp_blue;
+		break;
+		case Stamp.Green:
+			stamp = spr_stamp_green;
+		break;
+		case Stamp.Yellow:
+			stamp = spr_stamp_yellow;
+		break;
+	}
+	
+	if (stamp != noone) {
+	draw_sprite_ext(
+		stamp, 
+		0, 
+		x - sprite_xoffset + sprite_width/2, // shift to the right
+		y - sprite_yoffset  + sprite_width/8,
+		0.25,
+		0.25,
+		0,
+		c_white,
+		1
+	);
+	}
+}
+#endregion
+
+
 // Focus Draw code
 #region
 if (obj_player.box_focus == id) {
