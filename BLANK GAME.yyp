@@ -112,6 +112,7 @@
     {"id":{"name":"obj_stamp_yellow","path":"objects/obj_stamp_yellow/obj_stamp_yellow.yy",},},
     {"id":{"name":"obj_temp_roomba","path":"objects/obj_temp_roomba/obj_temp_roomba.yy",},},
     {"id":{"name":"obj_truck","path":"objects/obj_truck/obj_truck.yy",},},
+    {"id":{"name":"ps_spark","path":"particles/ps_spark/ps_spark.yy",},},
     {"id":{"name":"level_2","path":"rooms/level_2/level_2.yy",},},
     {"id":{"name":"level_3","path":"rooms/level_3/level_3.yy",},},
     {"id":{"name":"rm_fail","path":"rooms/rm_fail/rm_fail.yy",},},
