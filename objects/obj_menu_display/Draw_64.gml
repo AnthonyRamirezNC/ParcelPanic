@@ -1,3 +1,7 @@
+if (!instance_exists(obj_game_manager)) {
+	exit;
+}
+
 if (open) {
 	progress = lerp(progress, ta_width, .1);
 	if (progress > ta_width) {
