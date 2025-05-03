@@ -74,6 +74,7 @@
     {"name":"inst_17724A47","path":"rooms/tutorial_level/tutorial_level.yy",},
     {"name":"inst_2D0A6BDF","path":"rooms/tutorial_level/tutorial_level.yy",},
     {"name":"inst_4FDD9A8C","path":"rooms/tutorial_level/tutorial_level.yy",},
+    {"name":"inst_50A9C9B6","path":"rooms/tutorial_level/tutorial_level.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -163,6 +164,7 @@
         {"$GMRInstance":"v2","%Name":"inst_2D0A6BDF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2D0A6BDF","objectId":{"name":"obj_barrier","path":"objects/obj_barrier/obj_barrier.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":2.34375,"scaleY":0.46875,"x":1726.0,"y":2070.0,},
         {"$GMRInstance":"v2","%Name":"inst_83D0BDC","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_83D0BDC","objectId":{"name":"obj_barrier","path":"objects/obj_barrier/obj_barrier.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":5.015625,"scaleY":0.46875,"x":2432.0,"y":1588.0,},
         {"$GMRInstance":"v2","%Name":"inst_35C3F518","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_35C3F518","objectId":{"name":"obj_barrier","path":"objects/obj_barrier/obj_barrier.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":90.0,"scaleX":6.609375,"scaleY":0.46875,"x":2219.0,"y":2160.0,},
+        {"$GMRInstance":"v2","%Name":"inst_50A9C9B6","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50A9C9B6","objectId":{"name":"obj_redFlashTimer","path":"objects/obj_redFlashTimer/obj_redFlashTimer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-6.6431603,"scaleY":5.9784193,"x":-226.0523,"y":458.48865,},
         {"$GMRInstance":"v2","%Name":"inst_4FDD9A8C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4FDD9A8C","objectId":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":10.0,"scaleY":10.0,"x":-1920.0,"y":0.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
