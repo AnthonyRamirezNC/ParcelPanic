@@ -11,4 +11,6 @@ else if(keyboard_check_pressed(ord("X"))){
 //Pause and unpause the timer
 else if(keyboard_check_pressed(ord("P"))){
 	timer_active = !timer_active;
+}else if(keyboard_check_pressed(ord("N"))){
+	room.goto_next_level()
 }

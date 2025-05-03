@@ -26,7 +26,6 @@
     {"$GMFolder":"","%Name":"StampStation","folderPath":"folders/Objects/PlaceableObjects/MiniGames/StampStation.yy","name":"StampStation","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"minigame_objects","folderPath":"folders/Objects/PlaceableObjects/MiniGames/StampStation/minigame_objects.yy","name":"minigame_objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"temp_labels","folderPath":"folders/Objects/PlaceableObjects/temp_labels.yy","name":"temp_labels","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"temp_labels","folderPath":"folders/Objects/PlaceableObjects/temp_labels.yy","name":"temp_labels","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -55,7 +54,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"BLANK GAME",
   "resources":[
