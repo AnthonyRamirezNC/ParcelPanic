@@ -3,7 +3,10 @@ event_inherited();
 
 // I wonder if this'll just work??
 if (p_on_minigame) {
-	exit;
+	if (audio_is_playing(walking)) {
+        audio_stop_sound(walking);
+    }
+    exit;
 }
 
 // Movement
