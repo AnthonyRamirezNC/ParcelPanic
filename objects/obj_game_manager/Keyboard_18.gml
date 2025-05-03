@@ -12,5 +12,5 @@ else if(keyboard_check_pressed(ord("X"))){
 else if(keyboard_check_pressed(ord("P"))){
 	timer_active = !timer_active;
 }else if(keyboard_check_pressed(ord("N"))){
-	room.goto_next_level()
+	room_goto_next()
 }
