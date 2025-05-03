@@ -1,8 +1,7 @@
 randomize();
 
 
-room_level = 0;
-quota = 7;
+quota = obj_room_manager.start_quota + obj_room_manager.current_level;
 taken_quota = quota;
 
 quota_timer = 180.0;

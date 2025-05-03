@@ -7,8 +7,11 @@ if(timer_active){
 		quota_timer = 0;
 	}
 
-	if (quota_timer == 0) {
-		room_goto(rm_fail);
+	if (quota_timer == 0 and quota > 0) {
+		goto_fail();
 	}
 }
-	
+
+if (quota <= 0) {
+	goto_next_level();
+}
