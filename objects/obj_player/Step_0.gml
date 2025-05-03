@@ -19,6 +19,17 @@ if (up or down or left or right) {
 	moving = false;
 }
 
+//movement sound
+// Start the loop when we begin moving
+if (moving && !audio_is_playing(walking)) {
+    audio_play_sound(walking, 1, true);
+}
+
+// Stop the loop when we stop moving
+if (!moving && audio_is_playing(walking)) {
+    audio_stop_sound(walking);
+}
+
 var newx = 0;
 var newy = 0;
 if (up) {
@@ -130,6 +141,7 @@ if (keyboard_check_pressed(vk_space) and !carrying) // or whatever your pickup k
     {
 		box = box_focus;
 		carrying = true;
+		audio_play_sound(pickup_box, 1, false)
         with (box)
         {
 			if (state == State.OnMiniGame) {
@@ -147,6 +159,7 @@ if (keyboard_check_pressed(vk_space) and !carrying) // or whatever your pickup k
 		// nevermind, there is no longer a switch statement
 		if (focus.object_index == obj_conveyorBeltEnter) {
 			box.state = State.OnConveyer;
+			audio_play_sound(place_box, 1, false)
 			box.x = focus.x;
 			box.y = focus.y - 12;
 			box.on_what = focus;
@@ -156,11 +169,15 @@ if (keyboard_check_pressed(vk_space) and !carrying) // or whatever your pickup k
 			
 			if (!status) {
 				// Else, place on ground
+							//place box sound
+				audio_play_sound(place_box, 1, false)
 				set_box_on_ground(box);
 			}
 		}
 	} else {
 		// Function call to set box on the ground
+		//place box sound
+		audio_play_sound(place_box, 1, false)
 		set_box_on_ground(box);
 	}
 	// Box no longer attached to player
