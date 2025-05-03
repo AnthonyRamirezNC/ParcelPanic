@@ -1,1 +1,3 @@
-instance_destroy(other)
+if (other.state != State.Carrying){
+	instance_destroy(other)
+}
