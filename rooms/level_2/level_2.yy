@@ -17,7 +17,6 @@
     {"name":"inst_6355AFA4_1","path":"rooms/level_2/level_2.yy",},
     {"name":"inst_372C2620_1","path":"rooms/level_2/level_2.yy",},
     {"name":"inst_1864CB4A_1","path":"rooms/level_2/level_2.yy",},
-    {"name":"inst_5BCF4C14_1","path":"rooms/level_2/level_2.yy",},
     {"name":"inst_1A96A28E_1","path":"rooms/level_2/level_2.yy",},
     {"name":"inst_2FD3AF09_1","path":"rooms/level_2/level_2.yy",},
     {"name":"inst_9A2BE46_1","path":"rooms/level_2/level_2.yy",},
@@ -93,6 +92,8 @@
     {"name":"inst_541A9DD0","path":"rooms/level_2/level_2.yy",},
     {"name":"inst_6DEBD215","path":"rooms/level_2/level_2.yy",},
     {"name":"inst_1D657851","path":"rooms/level_2/level_2.yy",},
+    {"name":"inst_59319DF0","path":"rooms/level_2/level_2.yy",},
+    {"name":"inst_5CAA2C99","path":"rooms/level_2/level_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -105,7 +106,6 @@
         {"$GMRInstance":"v2","%Name":"inst_2F171190_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2F171190_1","objectId":{"name":"obj_collector","path":"objects/obj_collector/obj_collector.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collector","path":"objects/obj_collector/obj_collector.yy",},"propertyId":{"name":"collection_type","path":"objects/obj_collector/obj_collector.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Shipping.Truck",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":2886.0,"y":1888.0,},
-        {"$GMRInstance":"v2","%Name":"inst_5BCF4C14_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5BCF4C14_1","objectId":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":7.0,"scaleY":7.0,"x":-335.19757,"y":281.0,},
         {"$GMRInstance":"v2","%Name":"inst_25AB4011_1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_25AB4011_1","objectId":{"name":"obj_collector","path":"objects/obj_collector/obj_collector.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_collector","path":"objects/obj_collector/obj_collector.yy",},"propertyId":{"name":"collection_type","path":"objects/obj_collector/obj_collector.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Shipping.Ship",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":960.0,"y":2058.0,},
@@ -202,6 +202,8 @@
         {"$GMRInstance":"v2","%Name":"inst_541A9DD0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_541A9DD0","objectId":{"name":"obj_shelf","path":"objects/obj_shelf/obj_shelf.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0546875,"scaleY":1.0,"x":2616.25,"y":1579.0,},
         {"$GMRInstance":"v2","%Name":"inst_6DEBD215","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6DEBD215","objectId":{"name":"obj_shelf","path":"objects/obj_shelf/obj_shelf.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.03125,"scaleY":1.0,"x":2718.75,"y":1579.0,},
         {"$GMRInstance":"v2","%Name":"inst_1D657851","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1D657851","objectId":{"name":"obj_shelf","path":"objects/obj_shelf/obj_shelf.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0546875,"scaleY":1.0,"x":2823.25,"y":1579.0,},
+        {"$GMRInstance":"v2","%Name":"inst_59319DF0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_59319DF0","objectId":{"name":"obj_redFlashTimer","path":"objects/obj_redFlashTimer/obj_redFlashTimer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-6.6431603,"scaleY":5.9784193,"x":-227.0,"y":458.0,},
+        {"$GMRInstance":"v2","%Name":"inst_5CAA2C99","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5CAA2C99","objectId":{"name":"obj_game_manager","path":"objects/obj_game_manager/obj_game_manager.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":-404.0,"y":494.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":68,"SerialiseWidth":60,"TileCompressedData":[
           -975,-2147483648,-30,1,-30,-2147483648,-30,1,-30,-2147483648,-30,1,-30,-2147483648,-30,1,-30,-2147483648,
