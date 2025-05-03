@@ -13,3 +13,6 @@ if(keyboard_check_pressed(ord("N"))){
 else if(keyboard_check_pressed(ord("Q"))){
 	goto_restart();
 }
+if(keyboard_check_pressed(ord("E"))) {
+	goto_fail()	
+}

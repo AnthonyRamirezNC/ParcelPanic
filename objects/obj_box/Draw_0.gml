@@ -10,7 +10,7 @@ if (state == State.Carrying and player != noone) {
 draw_self();
 // Shipping Label Drawing code
 #region
-if (attributes[0] != noone && !played_shipping) {
+if (attributes[0] != noone) {
 	var label = noone;
 	switch (attributes[0]) {
 		case Shipping.Airplane:
@@ -36,17 +36,21 @@ if (attributes[0] != noone && !played_shipping) {
 			c_white,
 			1
 		);
-		audio_play_sound(shipping_complete, 1, false);
-		played_shipping = true;
+		
+		if(!played_shipping) {
+			audio_play_sound(shipping_complete, 1, false);
+			played_shipping = true;
+		}
 
 	}
 }
+
 #endregion
 
 
 // Packaging Label Drawing code
 #region
-if (attributes[1] != noone && !played_packing) {
+if (attributes[1] != noone) {
 	draw_sprite_ext(
 		packaged_label_spr, 
 		0, 
@@ -58,13 +62,16 @@ if (attributes[1] != noone && !played_packing) {
 		c_white,
 		1
 	);
-	audio_play_sound(packing_complete, 1, false);
-	played_packing= true;
+	
+	if (!played_shipping) {
+		audio_play_sound(packing_complete, 1, false);
+		played_packing= true;
+	}
 }
 #endregion
 
 #region
-if (attributes[2] != noone && !played_labeling) {
+if (attributes[2] != noone) {
 	var stamp = noone;
 	switch (attributes[2]) {
 		case Stamp.Blue:
@@ -90,9 +97,12 @@ if (attributes[2] != noone && !played_labeling) {
 		c_white,
 		1
 	);
-	audio_play_sound(labeling_complete, 1, false);
-	played_labeling= true;
+	if(!played_shipping) {
+		audio_play_sound(labeling_complete, 1, false);
+		played_labeling= true;
+		}
 	}
+	
 }
 #endregion
 

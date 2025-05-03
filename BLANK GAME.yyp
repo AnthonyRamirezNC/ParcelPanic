@@ -61,6 +61,7 @@
   },
   "name":"BLANK GAME",
   "resources":[
+    {"id":{"name":"fnt_end","path":"fonts/fnt_end/fnt_end.yy",},},
     {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
     {"id":{"name":"obj_airplane","path":"objects/obj_airplane/obj_airplane.yy",},},
     {"id":{"name":"obj_barrier","path":"objects/obj_barrier/obj_barrier.yy",},},

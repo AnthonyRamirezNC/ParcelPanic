@@ -10,3 +10,4 @@ draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_text(16, 16, "Time Left: " + time_string);
+draw_text(16, 32, "Score: " + string(obj_room_manager.current_level * 100));
