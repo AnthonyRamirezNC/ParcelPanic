@@ -1,7 +1,7 @@
 //get inputs
-up_key = keyboard_check_pressed(vk_up);
-down_key = keyboard_check_pressed(vk_down);
-accept_key = keyboard_check_pressed(vk_enter);
+var up_key = keyboard_check_pressed(vk_up);
+var down_key = keyboard_check_pressed(vk_down);
+var accept_key = keyboard_check_pressed(vk_enter);
 
 
 //move through the menu
@@ -19,6 +19,7 @@ if (accept_key) {
 	switch (pos) {
 		case 0:
 			//start game
+			goto_start()
 			break;
 		case 1:
 			//Credits

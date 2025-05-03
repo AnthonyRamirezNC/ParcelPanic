@@ -122,7 +122,6 @@
     {"id":{"name":"level_3","path":"rooms/level_3/level_3.yy",},},
     {"id":{"name":"rm_fail","path":"rooms/rm_fail/rm_fail.yy",},},
     {"id":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},
-    {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"id":{"name":"tutorial_level","path":"rooms/tutorial_level/tutorial_level.yy",},},
     {"id":{"name":"scr_button_states","path":"scripts/scr_button_states/scr_button_states.yy",},},
     {"id":{"name":"scr_collection_handle","path":"scripts/scr_collection_handle/scr_collection_handle.yy",},},
@@ -187,7 +186,6 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_mainMenu","path":"rooms/rm_mainMenu/rm_mainMenu.yy",},},
-    {"roomId":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},},
     {"roomId":{"name":"tutorial_level","path":"rooms/tutorial_level/tutorial_level.yy",},},
     {"roomId":{"name":"level_2","path":"rooms/level_2/level_2.yy",},},
     {"roomId":{"name":"level_3","path":"rooms/level_3/level_3.yy",},},
